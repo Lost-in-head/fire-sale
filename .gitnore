@@ -1,0 +1,130 @@
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =========================
+# ENV & SECRETS (CRITICAL)
+# =========================
+.env
+.env.*
+*.env
+
+# API keys / credentials
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+ENV/
+
+# Python build
+build/
+dist/
+*.egg-info/
+
+# =========================
+# NODE / JAVASCRIPT
+# =========================
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# DATABASES
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# TEMP FILES
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# DOCKER (IF USED)
+# =========================
+docker-data/
+*.tar
+
+# =========================
+# TEST / COVERAGE
+# =========================
+coverage/
+.pytest_cache/
+
+# =========================
+# BUILD / OUTPUT
+# =========================
+out/
+dist/
+build/
+
+# =========================
+# AGENT-SPECIFIC (IMPORTANT)
+# =========================
+# Runtime memory / state (you may generate these later)
+memory/
+state/
+sessions/
+
+# Generated leads / sensitive data
+DATA/leads.csv
+DATA/leads.json
+
+# Exported reports
+exports/
+
+# =========================
+# PAPERCLIP / LOCAL AI SYSTEMS
+# =========================
+.paperclip/
+.paperclip/*
+*.db-shm
+*.db-wal
+
+# =========================
+# MISC
+# =========================
+*.bak
+*.old
+*.backup
+
+
+# Prevent accidental uploads of backups
+*.zip
+*.tar.gz
+*.rar
