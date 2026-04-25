@@ -1,9 +1,12 @@
 import sqlite3
 import os
+from pathlib import Path
 
-DB_PATH = os.getenv("LEADS_DB_PATH", "./data/fire_sale_leads.sqlite3")
+BASE_DIR = Path(__file__).resolve().parent.parent
+DB_PATH = os.getenv("LEADS_DB_PATH", str(BASE_DIR / "data" / "fire_sale_leads.sqlite3"))
 
 def get_connection():
+    Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
     return sqlite3.connect(DB_PATH)
 
 def init_db():
@@ -26,4 +29,5 @@ def init_db():
 
 if __name__ == "__main__":
     init_db()
-    print("Database initialized.")
+    print(f"Database initialized at: {DB_PATH}")
+    
