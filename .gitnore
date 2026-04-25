@@ -12,6 +12,7 @@ Thumbs.db
 .env
 .env.*
 *.env
+!.env.example
 
 # API keys / credentials
 secrets.json
@@ -42,6 +43,11 @@ dist/
 # NODE / JAVASCRIPT
 # =========================
 node_modules/
+venv/
+.venv/
+__pychache__/
+logs/
+*.log
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
